@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Search from "./Search";
 import Wallpaper from "./Wallpaper";
 
 const Content = () => {
@@ -6,6 +7,7 @@ const Content = () => {
     <div className="header">
       <div className="container">
         <Header />
+        <Search />
         <Wallpaper />
       </div>
 
@@ -13,10 +15,7 @@ const Content = () => {
         .header {
           width: 100%;
           height: 100vh;
-          padding-left: 18rem;
-          padding-right: 18rem;
-          padding-top: 15rem;
-          padding-bottom: 5rem;
+          padding: 15rem 18rem 5rem 18rem;
           color: var(--color-secondary);
           background-color: var(--color-primary);
           position: relative;

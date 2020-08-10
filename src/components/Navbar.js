@@ -9,6 +9,7 @@ const Navbar = () => {
         </a>
         <a href="#">Venom</a>
       </div>
+      
       <style jsx>{`
         .container {
           width: 124rem;
