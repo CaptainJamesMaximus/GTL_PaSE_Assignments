@@ -1,5 +1,4 @@
 import Header from "./Header";
-import Search from "./Search";
 import Wallpaper from "./Wallpaper";
 
 const Content = () => {
@@ -7,7 +6,6 @@ const Content = () => {
     <div className="header">
       <div className="container">
         <Header />
-        <Search />
         <Wallpaper />
       </div>
 
