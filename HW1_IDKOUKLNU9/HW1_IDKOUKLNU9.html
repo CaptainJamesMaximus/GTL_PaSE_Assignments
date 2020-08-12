@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background-color: rgb(216, 214, 214);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5rem 25rem;
+      }
+
+      .firstname,
+      .lastname,
+      .other,
+      .drop-down {
+        display: flex;
+        flex-direction: column;
+        height: 4rem;
+        justify-content: space-between;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      #firstname,
+      #lastname,
+      #other,
+      #country {
+        height: 2.5rem;
+        border-radius: 0.5rem;
+      }
+
+      .subject {
+        position: relative;
+        top: 1rem;
+      }
+
+      #message {
+        width: 100%;
+      }
+      p {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      #submit {
+        position: relative;
+        top: 2rem;
+        background-color: rgb(31, 15, 15);
+        color: mintcream;
+        height: 2rem;
+        width: 5rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="container">
+ 
+      <div class="firstname">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" />
+      </div>
+
+      <div class="lastname">
+        <label for="lastname">Last Name</label><br />
+        <input type="text" id="lastname" name="lastname" />
+      </div>
+
+      <div class="other">
+        <label for="other">Other Name(s)</label><br />
+        <input type="text" id="other" name="other" />
+      </div>
+
+      <div class="drop-down">
+        <legend>Country</legend>
+        <select id="country" name="Country">
+          <option>--countries list--</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Australia">Australia</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+        </select>
+      </div>
+
+      <div class="subject">
+        <p>Subject</p>
+        <textarea name="typehere" id="message" cols="30" rows="10">
+          Write something.. 
+        </textarea>
+      </div>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
