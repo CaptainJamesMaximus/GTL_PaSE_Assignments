@@ -39,6 +39,7 @@
       #country {
         height: 2.5rem;
         border-radius: 0.5rem;
+        font-size: 20px;
       }
 
       .subject {
@@ -48,6 +49,8 @@
 
       #message {
         width: 100%;
+        padding: 5px;
+        border-radius: 5px;
       }
       p {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -66,20 +69,37 @@
   </head>
   <body>
     <form class="container">
- 
       <div class="firstname">
         <label for="firstname">First Name</label>
-        <input type="text" id="firstname" name="firstname" />
+        <input
+          type="text"
+          id="firstname"
+          placeholder="firstname"
+          name="firstname"
+          maxlength="30"
+        />
       </div>
 
       <div class="lastname">
         <label for="lastname">Last Name</label><br />
-        <input type="text" id="lastname" name="lastname" />
+        <input
+          type="text"
+          id="lastname"
+          placeholder="lastname"
+          name="lastname"
+          maxlength="30"
+        />
       </div>
 
       <div class="other">
         <label for="other">Other Name(s)</label><br />
-        <input type="text" id="other" name="other" />
+        <input
+          type="text"
+          id="other"
+          placeholder="othername(s)"
+          name="other"
+          maxlength="30"
+        />
       </div>
 
       <div class="drop-down">
@@ -95,11 +115,14 @@
 
       <div class="subject">
         <p>Subject</p>
-        <textarea name="typehere" id="message" cols="30" rows="10">
-          Write something.. 
-        </textarea>
+        <textarea
+          name="typehere"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Write something.."
+        ></textarea>
       </div>
-
       <input id="submit" type="submit" value="Submit" />
     </form>
   </body>
